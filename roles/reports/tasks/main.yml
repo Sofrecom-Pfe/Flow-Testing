@@ -13,5 +13,5 @@
 - name: Write report to file
   copy:
     content: "{{ report }}"
-    dest: "/root/ansible/report_{{ ansible_hostname }}_{{ ansible_date_time.date }}_{{ ansible_date_time.hour }}-{{ ansible_date_time.minute }}.txt"
+    dest: "{{ file_name }}"
     backup: yes
